@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arsenal", sans-serif;
+}
+
+/* Estilos da nova barra superior com contatos */
+.top-bar {
+    background-color: #3d3737;
+    color: #b34343;
+    padding: 2px 15px; /* Reduzi o padding para diminuir a altura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; /* Diminuí o espaçamento entre os contatos */
+}
+
+.top-bar a {
+    color: #fdf2f2;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.social-icons img {
+    height: 20px;
+    margin-left: 10px;
+}
+
+/* Estilos para o menu e o nome do candidato */
+.menu-bar {
+    background-color: #0d0d10;
+    padding: 2px 70px; /* Reduzi o padding para diminuir a altura */
+    display: flex;
+    justify-content: center; /* Centraliza todo o conteúdo da barra de menu */
+    align-items: center;
+    gap: 15px; /* Aumentei o espaçamento para afastar o nome do menu */
+}
+
+.menu-bar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.menu-bar nav a:hover {
+    color: #cf8c00;
+}
+
+/* Estilos para a escrita do nome do candidato */
+.nome-candidato {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.8;
+}
+
+.nome-primeiro {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #e7a418;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    z-index: 2;
+}
+
+.nome-segundo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    letter-spacing: -2px;
+    color: #fff;
+    background-color: #0e0e0e;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilos para a seção principal (wallpaper) */
+.wallpaper {
+    background-color: #331db6;
+    color: #fff;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.wallpaper-content {
+    flex: 1;
+    max-width: 50%;
+ 
+}
+
+.wallpaper-content h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.wallpaper-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.wallpaper-image {
+    flex: 1;
+    display: flex;
+    
+}
+
+.wallpaper-image img {
+   width: 36%;
+    object-fit: contain;
+border-radius: 20% ;
+}
+
+.button {
+    background-color: #ffad00;
+    color: #050404;
+    padding: 18px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* O restante do seu código CSS */
+.candidato {
+    display: flex;
+}
+
+.candidato img {
+ border-radius: 7% ;
+    width: 58%;
+    margin-top: 7%;
+    margin-left: 2%;
+}
+
+.infos {
+    margin: 3%;
+    margin-right: 10%;
+}
+
+.infos h3, .faixa_esquerda h3 {
+    color: #000000;
+}
+
+.infos h1, .faixa_esquerda h1 {
+    color: #214791;
+    font-weight: 700;
+    font-size: 5vw;
+    margin-bottom: 2%;
+}
+
+.infos p, .faixa_esquerda p {
+    font-size: 2.vw;
+    color: #000000;
+    line-height: 1.8;
+}
+
+.trajetoria {
+ 
+}
+
+.faixa_esquerda{
+    width: 45%;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.accordeons {
+    width: 55%;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+details {
+    width: 100%;
+    margin: 3%;
+    border: 2px solid #724d29;
+    border-radius: 8px;
+    background-color: #ff7b0035;
+    overflow: hidden;
+}
+
+summary {
+    cursor: pointer;
+    padding: 12px;
+    background-color: #FF7B00;
+    color: #112244;
+    font-weight: bold;
+    border-bottom: 1px solid #FF7B00;
+}
+
+summary:hover {
+    background-color: #112244;
+    color: #ffffff;
+}
+
+details p{
+    padding: 12px;
+    background-color: #fffaf5;
+    color: #000000;
+}
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    background-color: #112244;
+    margin-top: 5%;
+    padding-top: 3%;
+    text-align: center;
+    align-items: center;
+}
+
+.valores h3 {
+    color: #0f0d0b;
+    padding-bottom: 1%;
+}
+
+.valores h1 {
+    color: #ffffff;
+    font-size: 2.5vw;
+    padding-bottom: 2%;
+}
+
+.valores p {
+    color: #ffffff;
+    width: 80%;
+    font-size: 1.5vw;
+    line-height: 1.5;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 3% auto;
+    gap: 3%;
+}
+
+.card {
+    flex: 1 1 calc(33.33% - 3%);
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: left;
+    padding: 1.5%;
+    box-sizing: border-box;
+    margin-bottom: 3%;
+}
+
+.cards :hover {
+    background-color: #ffcc00;
+    transition: 0.3s;
+    scale: 1.05;
+}
+
+#card_icon {
+    width: 10%;
+    padding-bottom: 2%;
+}
+
+#card_title {
+    color:#112244;
+    padding-bottom: 2%;
+}
+
+#card_paragraph {
+    color: #112244;
+    font-size: 1vw;
+}
+
+.footer_links {
+    background-color: yellowgreen;
+    height: 50px;
+}
+
+.footer_redes_sociais {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.footer_redes_sociais img {
+    width: 3%;
+}
+
+/* --- Estilos para a Seção de Pilares do Governo (Compromissos) --- */
+
+.pilares-governo {
+    padding: 60px 10%; /* Ajustado para 10% de margem, seguindo o padrão da .faixa_esquerda */
+    text-align: center;
+    background-color: #f9f9f9; /* Fundo levemente cinza para destacar */
+}
+
+.pilares-governo h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #214791; /* Utilizando a cor azul forte dos títulos h1 */
+}
+
+.pilares-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; /* Distribui o espaço entre os cards */
+    gap: 30px; /* Espaçamento entre os cards */
+}
+
+.pilar-card {
+    flex: 1 1 300px; /* Cartões com largura base de 300px, flexíveis */
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px; /* Combinando com o border-radius dos accordeons */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    text-align: left;
+    min-height: 380px; /* Ajuda a alinhar a altura dos cartões se o texto for diferente */
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito de hover similar ao que você já tem nos seus .cards */
+.pilar-card:hover {
+    transform: translateY(-5px); /* Efeito sutil de levantar */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pilar-card h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #112244; /* Cor escura para o título, combinando com outros elementos */
+    font-weight: 700;
+}
+
+.pilar-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Estilos para o bloco de ícone (círculo verde na imagem) */
+.pilar-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px; /* Mantive o estilo quadrado arredondado da imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.pilar-icon img {
+    width: 30px; 
+    height: 30px;
+    filter: invert(100%); /* Deixa o ícone branco */
+}
+
+/* Cores de fundo dos ícones (baseado nas cores da imagem) */
+.icon-verde-escuro {
+    background-color:#ffffff; /* Educação e Saúde */
+}
+
+.icon-verde-claro {
+    background-color:#ffffff; /* Sustentável */
+}
+
+
+/* --- Responsividade para Pilares --- */
+@media (max-width: 900px) {
+    .pilares-governo {
+        padding: 40px 5%;
+    }
+    
+    .pilares-container {
+        flex-direction: column; /* Empilha os cartões em telas menores */
+        align-items: center;
+    }
+    
+    .pilar-card {
+        max-width: 100%;
+        min-height: auto; /* Altura automática ao empilhar */
+    }
+}

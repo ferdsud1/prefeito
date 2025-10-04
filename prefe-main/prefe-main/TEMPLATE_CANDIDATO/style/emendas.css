@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arsenal', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+.menu {
+  height: 100px;
+  background-color: #112244;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.menu img {
+  height: 90px;
+  border-radius: 25px;
+  margin-right: 50px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 5px;
+}
+
+.menu li a:hover,
+.menu li a#atual {
+  color: #FF7B00;
+  border-bottom: 3px solid #FF7B00;
+}
+
+main.conteudo {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #112244;
+}
+
+.emenda {
+  margin-bottom: 25px;
+  padding: 15px;
+  border-left: 5px solid #FF7B00;
+  background: #fafafa;
+  border-radius: 5px;
+}
+
+.emenda h2 {
+  color: #112244;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.emenda p {
+  color: #444;
+  font-size: 1rem;
+}

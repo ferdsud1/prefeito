@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site Político - Notícias</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- CSS externo da pasta style -->
+  <link rel="stylesheet" href="style/noticias.css" />
+</head>
+<body>
+  <section class="menu">
+    <img src="assets/images.jpg" alt="Logo" />
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="noticias.html" id="atual">Notícias</a></li>
+      <li><a href="emendas.html">Emendas</a></li>
+      <li><a href="midia.html">Midia</a></li>
+    </ul>
+  </section>
+
+  <main class="noticias">
+    <button class="seta esquerda" onclick="mudarSlide(-1)">‹</button>
+    <button class="seta direita" onclick="mudarSlide(1)">›</button>
+
+    <section class="slide ativo">
+      <figure>
+        <img src="assets/imagem-do-whatsapp-de-2025-01-31-as-17-37-57_3024a477-t4cahla1zz35.webp" alt="Notícia 1" />
+        <figcaption>Fonte: Abril.com</figcaption>
+      </figure>
+      <a href="https://veja.abril.com.br/politica/queimado-com-operacao-da-pf-rodrigo-manga-ganha-seguidores-e-mantem-planos-para-2026/" target="_blank" rel="noopener noreferrer">
+        <h3>Queimado com operação da PF, Rodrigo Manga ganha seguidores e mantém planos para 2026</h3>
+      </a>
+    </section>
+
+    <section class="slide">
+      <figure>
+        <img src="assets/manga-2-.jpg" alt="Notícia 2" />
+        <figcaption>Fonte: G1</figcaption>
+      </figure>
+      <a href="https://g1.globo.com/sp/sorocaba-jundiai/noticia/2025/04/16/100-dias-governo-entrevista-prefeito-sorocaba-rodrigo-manga.ghtml" target="_blank" rel="noopener noreferrer">
+        <h3>100 dias de governo: prefeito de Sorocaba garante que famílias sorteadas em programa de casas populares lançado há 4 anos receberão chaves até o fim de 2026</h3>
+      </a>
+    </section>
+
+    <section class="slide">
+      <figure>
+        <img src="assets/NIPVTNNMPFD55CVPYFHDZKDTFY.avif" alt="Notícia 3" />
+        <figcaption>Fonte: R7 São Paulo</figcaption>
+      </figure>
+      <a href="https://noticias.r7.com/sao-paulo/manga-se-destaca-em-cenarios-sem-tarcisio-e-cresce-nas-pesquisas-para-o-governo-de-sp-14022025/" target="_blank" rel="noopener noreferrer">
+        <h3>Manga se destaca em cenários sem Tarcísio e cresce nas pesquisas para o governo de SP</h3>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding: 15px 0; color:#666;">© 2025 Seu Site Político</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let slideAtual = 0;
+      const slides = document.querySelectorAll('.slide');
+
+      window.mudarSlide = function(direcao) {
+        slides[slideAtual].classList.remove('ativo');
+        slideAtual = (slideAtual + direcao + slides.length) % slides.length;
+        slides[slideAtual].classList.add('ativo');
+      }
+    });
+  </script>
+</body>
+</html>
